@@ -1,5 +1,5 @@
 
-aliases_list:
+aliases:
   - user: postmaster
     alias: root, user
   - user: hostmaster

@@ -9,7 +9,7 @@ update mail aliases database
 Role Variables
 --------------
 
-- `aliases_list`
+- `aliases`
 
 Example Playbook
 -------------------------
