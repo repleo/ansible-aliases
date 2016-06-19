@@ -3,7 +3,6 @@
     dest: /etc/aliases
     line: "{{ item.user }}: {{ item.alias }}"
     regexp: "^{{ item.user }}:"
-  with_items: aliases
-  sudo: yes
+  with_items: '{{aliases}}'
   notify: update aliases
 
