@@ -1,25 +1,35 @@
-aliases [![Build Status](https://travis-ci.org/xcezx/ansible-aliases.svg)](https://travis-ci.org/xcezx/ansible-aliases)
-========
+Ansible role - Update mail aliases
+=====
+[![Build Status](https://travis-ci.org/repleo/ansible-role-aliases.svg?branch=master)](https://travis-ci.org/repleo/ansible-role-aliases)
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-repleo.aliases-660198.svg?style=flat)](https://galaxy.ansible.com/repleo/aliases)
+
 
 update mail aliases database
 
 Role Variables
 --------------
 
-- `aliases`
+- `aliases_list`
 
 Example Playbook
 -------------------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
       roles:
-         - role: xcezx.aliases
-           aliases:
-             - { user: root, alias: john.doe@example.com }
+         - { role: repleo.aliases,
+             aliases:
+               - { user: root, alias: jeroen, staff }
+               - { user: info, alias: jeroen, sales }
 
 License
 -------
 
-BSD
+BSD - (c) 2016, Repleo, Amstelveen
+
+Author Information
+------------------
+
+Repleo, Amstelveen, Holland -- www.repleo.nl
+Jeroen Arnoldus (jeroen@repleo.nl)
+
+Original by: Tsuyoshi Maekawa (https://github.com/xcezx)

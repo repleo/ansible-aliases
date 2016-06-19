@@ -1,12 +1,28 @@
 ---
 galaxy_info:
-  author: xcezx
-  description: update mail aliases database
+  author: Jeroen Arnoldus
+  description: Updates mail aliases database
+  company: Repleo, Amstelveen, Holland
   license: BSD
-  min_ansible_version: 1.2
+  min_ansible_version: 1.4
+  github_branch: master
   platforms:
     - name: EL
       versions:
+        - 5
         - 6
-  categories:
+    - name: Fedora
+      versions:
+        - 16
+        - 17
+        - 18
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
     - system
+    - mail
+dependencies: []

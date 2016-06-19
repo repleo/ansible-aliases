@@ -1,1 +1,7 @@
-aliases: []
+
+aliases_list:
+  - user: postmaster
+    alias: root, user
+  - user: hostmaster
+    alias: root, staff
+
