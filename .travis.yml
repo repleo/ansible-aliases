@@ -8,6 +8,6 @@ install:
 
 script:
   - echo localhost > inventory
-  - touch /etc/aliases
+  - sudo touch /etc/aliases
   - ansible-playbook --syntax-check -i inventory test.yml
   - ansible-playbook -i inventory test.yml --connection=local --sudo
